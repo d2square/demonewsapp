@@ -1,0 +1,63 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:tools="http://schemas.android.com/tools"
+4    package="in.jvapps.system_alert_window" >
+5
+6    <uses-sdk
+7        android:minSdkVersion="16"
+7-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
+8        android:targetSdkVersion="30" />
+8-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
+9
+10    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+10-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:6:5-77
+10-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:6:22-74
+11    <uses-permission android:name="android.permission.WAKE_LOCK" />
+11-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:7:5-68
+11-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:7:22-65
+12    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+12-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:8:5-78
+12-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:8:22-75
+13
+14    <application>
+14-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:10:5-29:19
+15        <activity
+15-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:11:9-18:58
+16            android:name="in.jvapps.system_alert_window.BubbleActivity"
+16-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:12:13-43
+17            android:allowEmbedded="true"
+17-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:15:13-41
+18            android:documentLaunchMode="always"
+18-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:13:13-48
+19            android:label="@string/bubbles_activity"
+19-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:14:13-53
+20            android:resizeableActivity="true"
+20-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:16:13-46
+21            android:showOnLockScreen="true"
+21-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:17:13-44
+22            android:theme="@style/AppTheme.NoActionBar" />
+22-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:18:13-56
+23
+24        <service
+24-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:19:9-23:72
+25            android:name="in.jvapps.system_alert_window.services.WindowService"
+25-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:20:13-51
+26            android:enabled="true"
+26-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:21:13-35
+27            android:exported="false"
+27-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:22:13-37
+28            android:permission="android.permission.BIND_JOB_SERVICE" />
+28-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:23:13-69
+29        <service
+29-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:24:9-28:73
+30            android:name="in.jvapps.system_alert_window.services.WindowServiceNew"
+30-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:25:13-54
+31            android:enabled="true"
+31-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:26:13-35
+32            android:exported="false"
+32-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:27:13-37
+33            android:permission="android.permission.FOREGROUND_SERVICE" />
+33-->/Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:28:13-71
+34    </application>
+35
+36</manifest>

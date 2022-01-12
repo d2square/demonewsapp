@@ -1,0 +1,77 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:2:1-31:12
+INJECTED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:2:1-31:12
+	package
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:4:5-44
+		INJECTED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:3:5-51
+	xmlns:android
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.FOREGROUND_SERVICE
+ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:6:5-77
+	android:name
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:6:22-74
+uses-permission#android.permission.WAKE_LOCK
+ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:7:5-68
+	android:name
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:7:22-65
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:8:5-78
+	android:name
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:8:22-75
+application
+ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:10:5-29:19
+activity#in.jvapps.system_alert_window.BubbleActivity
+ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:11:9-18:58
+	android:label
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:14:13-53
+	android:resizeableActivity
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:16:13-46
+	android:showOnLockScreen
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:17:13-44
+	android:documentLaunchMode
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:13:13-48
+	android:theme
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:18:13-56
+	android:name
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:12:13-43
+	android:allowEmbedded
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:15:13-41
+service#in.jvapps.system_alert_window.services.WindowService
+ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:19:9-23:72
+	android:enabled
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:21:13-35
+	android:exported
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:22:13-37
+	android:permission
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:23:13-69
+	android:name
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:20:13-51
+service#in.jvapps.system_alert_window.services.WindowServiceNew
+ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:24:9-28:73
+	android:enabled
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:26:13-35
+	android:exported
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:27:13-37
+	android:permission
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:28:13-71
+	android:name
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml:25:13-54
+uses-sdk
+INJECTED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
+INJECTED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
+INJECTED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
+INJECTED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
+		ADDED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/dipak/FlutterDev/flutter/.pub-cache/hosted/pub.dartlang.org/system_alert_window-0.5.0+1/android/src/main/AndroidManifest.xml
