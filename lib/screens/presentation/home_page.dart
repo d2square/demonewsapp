@@ -1,7 +1,9 @@
+import 'package:NewsApp/routes/app_pages.dart';
 import 'package:NewsApp/screens/application/controller/home_page_controller.dart';
 import 'package:NewsApp/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:intl/intl.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key key}) : super(key: key);
@@ -41,7 +43,6 @@ class _HomePageState extends State<HomePage> {
                   : SingleChildScrollView(
                       child: Column(
                         children: <Widget>[
-                          /// Categories
                           ListView.builder(
                               shrinkWrap: true,
                               physics: NeverScrollableScrollPhysics(),
@@ -52,6 +53,12 @@ class _HomePageState extends State<HomePage> {
                                       controller.headLineList[index].urlToImage,
                                   categoryName:
                                       controller.headLineList[index].title,
+                                  cnnValue: controller
+                                      .headLineList[index].source.name,
+                                  date: convertDateTimeDisplay(controller
+                                      .headLineList[index].publishedAt),
+                                  description: controller
+                                      .headLineList[index].description,
                                 );
                               }),
                         ],
@@ -61,40 +68,96 @@ class _HomePageState extends State<HomePage> {
       }),
     );
   }
+
+  String convertDateTimeDisplay(String date) {
+    final DateFormat displayFormat = DateFormat('yyyy-MM-dd');
+    final DateTime displayDate = displayFormat.parse(date);
+    final String formatted = displayFormat.format(displayDate);
+    return formatted;
+  }
 }
 
 class NewsCard extends StatelessWidget {
-  final String imageAssetUrl, categoryName;
+  final String imageAssetUrl, categoryName, cnnValue, date, description;
 
-  NewsCard({this.imageAssetUrl, this.categoryName});
+  NewsCard(
+      {this.imageAssetUrl,
+      this.categoryName,
+      this.cnnValue,
+      this.date,
+      this.description});
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
-      onTap: () {},
+      onTap: () {
+        Get.toNamed(Routes.newsSummary, arguments: [
+          categoryName,
+          imageAssetUrl,
+          cnnValue,
+          description,
+          date
+        ]);
+      },
       child: Container(
         margin: EdgeInsets.all(18.0),
         child: Stack(
           children: <Widget>[
-            Container(
-                height: MediaQuery.of(context).size.height * 0.3,
-                // ignore this, cos I am giving height to the container
-                decoration: BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(8)),
-                    image: DecorationImage(
-                        fit: BoxFit.cover,
-                        image: NetworkImage(imageAssetUrl ??
-                            "https://1080motion.com/wp-content/uploads/2018/06/NoImageFound.jpg.png"))),
-                alignment: Alignment.bottomLeft,
-                child: Padding(
+            Hero(
+              tag: imageAssetUrl,
+              child: Container(
+                  height: MediaQuery.of(context).size.height * 0.3,
+                  // ignore this, cos I am giving height to the container
+                  decoration: BoxDecoration(
+                      borderRadius: BorderRadius.all(Radius.circular(8)),
+                      image: DecorationImage(
+                          fit: BoxFit.cover,
+                          image: NetworkImage(imageAssetUrl ??
+                              "https://1080motion.com/wp-content/uploads/2018/06/NoImageFound.jpg.png"))),
+                  alignment: Alignment.bottomLeft,
+                  child: Padding(
                     padding: EdgeInsets.all(10.0),
-                    child: Text(categoryName,
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 20.0,
-                            fontFamily:
-                                'assets/fonts/RobotoSlab-Regular.ttf'))))
+                    child: Align(
+                      alignment: Alignment.bottomLeft,
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          Text(categoryName,
+                              style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 20.0,
+                                  fontFamily:
+                                      'assets/fonts/RobotoSlab-Regular.ttf')),
+                          SizedBox(
+                            height: 5,
+                          ),
+                          Row(
+                            children: [
+                              Text(cnnValue,
+                                  style: TextStyle(
+                                      color: textColor,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12.0,
+                                      fontFamily:
+                                          'assets/fonts/RobotoSlab-Regular.ttf')),
+                              SizedBox(
+                                width: 5,
+                              ),
+                              Text(date,
+                                  style: TextStyle(
+                                      color: textColor,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 12.0,
+                                      fontFamily:
+                                          'assets/fonts/RobotoSlab-Regular.ttf')),
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  )),
+            )
           ],
         ),
       ),

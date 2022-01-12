@@ -12,62 +12,62 @@
 12         to allow setting breakpoints, to provide hot reload, etc.
 13    -->
 14    <uses-permission android:name="android.permission.INTERNET" />
-14-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:3:5-67
-14-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:3:22-64
+14-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:3:5-67
+14-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:3:22-64
 15    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-15-->[:connectivity] /Users/dipak/Downloads/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
-15-->[:connectivity] /Users/dipak/Downloads/example/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+15-->[:connectivity] /Users/dipak/Documents/demonews/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+15-->[:connectivity] /Users/dipak/Documents/demonews/build/connectivity/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
 16
 17    <application
-17-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:5:5-28:19
+17-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:5:5-28:19
 18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 18-->[androidx.core:core:1.6.0] /Users/dipak/.gradle/caches/transforms-2/files-2.1/2209aab9842c26141283ffd0736a341c/core-1.6.0/AndroidManifest.xml:24:18-86
 19        android:debuggable="true"
 20        android:hardwareAccelerated="false"
-20-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:6:9-44
+20-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:6:9-44
 21        android:icon="@mipmap/ic_launcher"
-21-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:7:9-43
+21-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:7:9-43
 22        android:label="News App" >
-22-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:8:9-33
+22-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:8:9-33
 23        <activity
-23-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:9:9-23:20
+23-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:9:9-23:20
 24            android:name="com.tejimandi.news.MainActivity"
-24-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:10:13-41
+24-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:10:13-41
 25            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
-25-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:11:13-144
+25-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:11:13-144
 26            android:hardwareAccelerated="true"
-26-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:12:13-47
+26-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:12:13-47
 27            android:launchMode="singleTop"
-27-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:13:13-43
+27-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:13:13-43
 28            android:theme="@style/LaunchTheme"
-28-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:14:13-47
+28-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:14:13-47
 29            android:windowSoftInputMode="adjustResize" >
-29-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:15:13-55
+29-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:15:13-55
 30            <meta-data
-30-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:16:17-18:40
+30-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:16:17-18:40
 31                android:name="io.flutter.app.android.SplashScreenUntilFirstFrame"
-31-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:17:17-82
+31-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:17:17-82
 32                android:value="true" />
-32-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:18:17-37
+32-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:18:17-37
 33
 34            <intent-filter>
-34-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:19:13-22:29
+34-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:19:13-22:29
 35                <action android:name="android.intent.action.MAIN" />
-35-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:20:17-69
-35-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:20:25-66
+35-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:20:17-69
+35-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:20:25-66
 36
 37                <category android:name="android.intent.category.LAUNCHER" />
-37-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:21:17-77
-37-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:21:27-74
+37-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:21:17-77
+37-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:21:27-74
 38            </intent-filter>
 39        </activity>
 40
 41        <meta-data
-41-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:25:9-27:33
+41-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:25:9-27:33
 42            android:name="flutterEmbedding"
-42-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:26:13-44
+42-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:26:13-44
 43            android:value="2" />
-43-->/Users/dipak/Downloads/example/android/app/src/main/AndroidManifest.xml:27:13-30
+43-->/Users/dipak/Documents/demonews/android/app/src/main/AndroidManifest.xml:27:13-30
 44    </application>
 45
 46</manifest>

@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/dipak/Downloads/example/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-kn/values-kn.xml",
+            "outputFile": "/Users/dipak/Documents/demonews/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-kn/values-kn.xml",
             "map": [
                 {
                     "source": "/Users/dipak/.gradle/caches/transforms-2/files-2.1/2209aab9842c26141283ffd0736a341c/core-1.6.0/res/values-kn/values-kn.xml",
