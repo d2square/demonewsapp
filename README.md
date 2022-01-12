@@ -1,24 +1,16 @@
-# system_alert_window_example
+# newsapp
 
-A flutter plugin to show Truecaller like overlay window, over all other apps along with callback events.
+A new Flutter project.
 
-## Android
+## Getting Started
 
-### Permissions
+This project is a starting point for a Flutter application.
 
-    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
-    <uses-permission android:name="android.permission.FOREGROUND_SERVICE " />
-    <uses-permission android:name="android.permission.WAKE_LOCK" />
+A few resources to get you started if this is your first Flutter project:
 
-#### Android 9 and below
+- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-Uses &#x27;draw on top&#x27; permission and displays it as a overlay window
-
-#### Android 10 and above
-
-Uses Android Bubble APIs to show the overlay window.
-
-
-## IOS
-
-Displays as a notification in the notification center [Help Needed]
+For help getting started with Flutter, view our
+[online documentation](https://flutter.dev/docs), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.

@@ -1,5 +1,6 @@
-import 'package:NewsApp/screens/application/controller/home_page_controller.dart';
+
 import 'package:get/get.dart';
+import 'package:newsapp/screens/application/controller/home_page_controller.dart';
 
 class HomePageBinding extends Bindings {
   @override

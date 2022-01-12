@@ -1,9 +1,10 @@
-import 'package:NewsApp/utils/constants.dart';
+
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:newsapp/utils/constants.dart';
 
 class NewsDetails extends StatefulWidget {
-  const NewsDetails({Key key}) : super(key: key);
+  const NewsDetails({Key? key}) : super(key: key);
 
   @override
   _NewsDetailsState createState() => _NewsDetailsState();
@@ -56,16 +57,16 @@ class _NewsDetailsState extends State<NewsDetails> {
                     Row(
                       children: [
                         Text(data[2],
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: textColor,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 12.0,
                                 fontFamily:
                                     'assets/fonts/RobotoSlab-Regular.ttf')),
-                        Spacer(),
+                        const Spacer(),
                         Text(data[4],
                             textAlign: TextAlign.start,
-                            style: TextStyle(
+                            style: const TextStyle(
                                 color: textColor,
                                 fontWeight: FontWeight.bold,
                                 fontSize: 12.0,
@@ -75,7 +76,7 @@ class _NewsDetailsState extends State<NewsDetails> {
                     ),
                     Text(data[3],
                         textAlign: TextAlign.left,
-                        style: TextStyle(
+                        style: const TextStyle(
                             color: textColor,
                             fontWeight: FontWeight.bold,
                             fontSize: 12.0,

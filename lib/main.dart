@@ -1,6 +1,6 @@
-import 'package:NewsApp/screens/application/binding/home_page_binding.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:newsapp/screens/application/binding/home_page_binding.dart';
 
 import 'lang/translation_service.dart';
 import 'routes/app_pages.dart';
@@ -11,7 +11,7 @@ void main() async {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key key}) : super(key: key);
+  const MyApp({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override

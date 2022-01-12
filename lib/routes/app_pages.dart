@@ -1,7 +1,8 @@
-import 'package:NewsApp/screens/application/binding/home_page_binding.dart';
-import 'package:NewsApp/screens/presentation/home_page.dart';
-import 'package:NewsApp/screens/presentation/news_details_page.dart';
+
 import 'package:get/get.dart';
+import 'package:newsapp/screens/application/binding/home_page_binding.dart';
+import 'package:newsapp/screens/presentation/home_page.dart';
+import 'package:newsapp/screens/presentation/news_details_page.dart';
 
 part 'app_routes.dart';
 

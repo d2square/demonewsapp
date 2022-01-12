@@ -1,4 +1,4 @@
-#Wed Jan 12 23:00:56 IST 2022
-base.0=/Users/dipak/Documents/demonews/build/app/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+#Thu Jan 13 00:45:13 IST 2022
+base.0=/Users/dipak/Documents/demonews/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

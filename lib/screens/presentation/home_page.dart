@@ -1,12 +1,12 @@
-import 'package:NewsApp/routes/app_pages.dart';
-import 'package:NewsApp/screens/application/controller/home_page_controller.dart';
-import 'package:NewsApp/utils/constants.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
+import 'package:newsapp/routes/app_pages.dart';
+import 'package:newsapp/screens/application/controller/home_page_controller.dart';
+import 'package:newsapp/utils/constants.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key key}) : super(key: key);
+  const HomePage({Key? key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -20,7 +20,7 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         centerTitle: true,
-        title: Text(
+        title: const Text(
           "HEADLINE",
           style: TextStyle(
               fontSize: 29, fontFamily: 'assets/fonts/RobotoSlab-Bold.ttf'),
@@ -29,11 +29,11 @@ class _HomePageState extends State<HomePage> {
       body: GetBuilder<HomePageController>(builder: (controller) {
         return SafeArea(
           child: controller.loading
-              ? Center(
+              ? const Center(
                   child: CircularProgressIndicator(),
                 )
               : controller.noConnection == true
-                  ? Container(
+                  ? SizedBox(
                       height: double.infinity,
                       child: Image.asset(
                         'assets/images/no_internet.gif',
@@ -45,20 +45,20 @@ class _HomePageState extends State<HomePage> {
                         children: <Widget>[
                           ListView.builder(
                               shrinkWrap: true,
-                              physics: NeverScrollableScrollPhysics(),
-                              itemCount: controller.headLineList.length,
+                              physics: const NeverScrollableScrollPhysics(),
+                              itemCount: controller.headLineList!.length,
                               itemBuilder: (context, index) {
                                 return NewsCard(
-                                  imageAssetUrl:
-                                      controller.headLineList[index].urlToImage,
+                                  imageAssetUrl: controller
+                                      .headLineList![index].urlToImage,
                                   categoryName:
-                                      controller.headLineList[index].title,
+                                      controller.headLineList![index].title,
                                   cnnValue: controller
-                                      .headLineList[index].source.name,
+                                      .headLineList![index].source!.name,
                                   date: convertDateTimeDisplay(controller
-                                      .headLineList[index].publishedAt),
+                                      .headLineList![index].publishedAt!),
                                   description: controller
-                                      .headLineList[index].description,
+                                      .headLineList![index].description,
                                 );
                               }),
                         ],
@@ -78,7 +78,7 @@ class _HomePageState extends State<HomePage> {
 }
 
 class NewsCard extends StatelessWidget {
-  final String imageAssetUrl, categoryName, cnnValue, date, description;
+  final String? imageAssetUrl, categoryName, cnnValue, date, description;
 
   NewsCard(
       {this.imageAssetUrl,
@@ -100,11 +100,11 @@ class NewsCard extends StatelessWidget {
         ]);
       },
       child: Container(
-        margin: EdgeInsets.all(18.0),
+        margin: const EdgeInsets.all(18.0),
         child: Stack(
           children: <Widget>[
             Hero(
-              tag: imageAssetUrl,
+              tag: imageAssetUrl!,
               child: Container(
                   height: MediaQuery.of(context).size.height * 0.3,
                   // ignore this, cos I am giving height to the container
@@ -122,30 +122,30 @@ class NewsCard extends StatelessWidget {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.end,
                         children: [
-                          Text(categoryName,
-                              style: TextStyle(
+                          Text(categoryName!,
+                              style: const TextStyle(
                                   color: Colors.white,
                                   fontWeight: FontWeight.bold,
                                   fontSize: 20.0,
                                   fontFamily:
                                       'assets/fonts/RobotoSlab-Regular.ttf')),
-                          SizedBox(
+                          const SizedBox(
                             height: 5,
                           ),
                           Row(
                             children: [
-                              Text(cnnValue,
-                                  style: TextStyle(
+                              Text(cnnValue!,
+                                  style: const TextStyle(
                                       color: textColor,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12.0,
                                       fontFamily:
                                           'assets/fonts/RobotoSlab-Regular.ttf')),
-                              SizedBox(
+                              const SizedBox(
                                 width: 5,
                               ),
-                              Text(date,
-                                  style: TextStyle(
+                              Text(date!,
+                                  style: const TextStyle(
                                       color: textColor,
                                       fontWeight: FontWeight.bold,
                                       fontSize: 12.0,
